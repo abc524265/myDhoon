@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Londrina+Solid:wght@100;300&family=Press+Start+2P&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    color: white;
+}
+body{
+    height: 100vh;
+    background-color: rgb(187, 187, 167);
+    width: 100vw;
+}
+
+nav{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+    color: white;
+    background-color: rgb(50, 87, 221);
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    font-family: 'Akronim', cursive;
+    font-size: 2rem;
+    color: bisque;
+
+}
+.brand img{
+    height: 40px;
+    width :45px; 
+    padding: 0 10px;
+    border-radius: 50%;
+}
+
+.container{
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0,0.4);
+    width: 70%;
+    margin: 15px auto;
+    border-radius: 20px;
+    background-image: url(images/bg1.jpg);
+    background-size: 100% 100%;
+    font-family: 'Londrina Solid', cursive;
+}
+
+.songList h1{
+    margin: 5px 10px;
+}
+
+.songItem{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.songItem img{
+    height: 50px;
+    width: 50px;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;    
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons{
+    width: 60vw;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons img{
+    cursor: pointer;
+}
+
+#next{
+    width: 90px;
+}
+#pause{
+    width: 60px;
+}
+#previous{
+    width: 60px;
+}

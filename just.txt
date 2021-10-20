@@ -1,0 +1,3 @@
+font-family: 'Akronim', cursive;
+font-family: 'Londrina Solid', cursive;
+font-family: 'Press Start 2P', cursive;
