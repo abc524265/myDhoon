@@ -1,4 +1,4 @@
-console.log("myDhoon is running");
+//console.log("myDhoon is running");
 
 //Initialize the Variables
 let songIndex = 0;
@@ -37,9 +37,9 @@ const makeAllPlay = () => {
 
 specificPlay.forEach((element) => {
     element.addEventListener('click', (e) => {
-        console.log(e.target.src);
+        //console.log(e.target.src);
         if(e.target.getAttribute("src") == "images/pause.png"){
-            console.log('paused')
+           // console.log('paused')
                 e.target.src = "images/play.png";
                 audioElement.pause();
                 playingGif.style.opacity = 0;
