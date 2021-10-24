@@ -56,19 +56,43 @@ nav ul li{
     font-family: 'Londrina Solid', cursive;
 }
 
-.songList h1{
-    margin: 5px 10px;
+.songList{
+padding: 5px;
 }
 
 .songItem{
     display: flex;
+    font-family: -webkit-pictograph;
+    font-weight: bolder;
     justify-content: space-around;
-    width: 30%;
+    width: 50%;
+    margin:12px 0;
+    padding: 5px;
+    background-color:#fffcfcc4;
+    border-radius: 20px;
+}
+.songItem span{
+    margin: auto;
+    color: black;
 }
 
 .songItem img{
-    height: 50px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.songListPlay{
+    color:black;
+}
+
+.timeStamp{
+    color: black;
+}
+
+.timeStamp img{
+    height: 40px;
     width: 50px;
+    cursor: pointer;
 }
 
 .bottom{
@@ -82,17 +106,28 @@ nav ul li{
     font-family: 'Press Start 2P', cursive;    
 }
 
+.songInfo{
+    display: flex;
+}
+
+.songInfo img{
+    height: 30px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
 #myProgressBar{
     width: 80vw;
     cursor: pointer;
 }
 
 .icons{
-    width: 60vw;
+    width: 20vw;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 30px;
 }
 
 .icons img{
@@ -100,11 +135,115 @@ nav ul li{
 }
 
 #next{
-    width: 90px;
+    width: 40px;
+    border: 2px solid white;
+
 }
-#pause{
-    width: 60px;
+#mainPlay{
+    width: 40px;
+    border: 2px solid white;
 }
 #previous{
-    width: 60px;
+    width: 40px;
+    border: 2px solid white;
+
 }
+
+
+
+
+/* .........responsive process is now starting........ */
+/* .........responsive process is now starting........ */
+/* .........responsive process is now starting........ */
+/* .........responsive process is now starting........ */
+/* .........responsive process is now starting........ */
+/* .........responsive process is now starting........ */
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .container{
+        width: 85%;
+    }
+    .songItem {
+        width: 95%;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+      nav ul li{
+          padding: 6px;
+      }
+      .brand{
+          font-size: 1.5rem;
+      }
+      .brand img{
+          height: 25px;
+          width: 30px;
+      }
+    .container{
+        width: 90%;
+    }
+    .songList h1 {
+        font-size: x-large;
+    }
+    .songItem{
+        height: 25px;
+    }
+    .songItem img{
+        height: 25px;
+        width: 25px;
+    }
+    .timeStamp img {
+        height: 25px;
+        width: 25px ;
+    }
+    #previous{
+        width: 25px;
+    }
+    #mainPlay{
+        width: 25px;
+    }
+    #next{
+        width: 35px;
+    }
+    #mainPlaySongName{
+        font-size: small;
+        text-align: center;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+      .container{
+          font-size: smaller;
+          position: relative;
+          left: 0vw;
+          width: 80vw;
+      }
+    .brand{
+        font-size: 1.2rem;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 90px;
+    }
+    nav ul li{
+        padding:2px;
+        font-size: smaller;
+    }
+    .songInfo{
+        position: relative;
+        left: -10vw;
+        align-items: flex-start;
+    }
+    .icons{
+        width: 50vw;
+    }
+    #mainPlaySongName{
+        text-align: left;
+    }
+  }
